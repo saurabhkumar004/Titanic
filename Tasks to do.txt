@@ -1,0 +1,2 @@
+sex_maping = {'male':0, 'female':1}
+train['Sex'] = train['Sex'].map(sex_maping)
