@@ -1,2 +1,5 @@
 sex_maping = {'male':0, 'female':1}
 train['Sex'] = train['Sex'].map(sex_maping)
+
+
+df_train[["Sex", "Survived"]].groupby(['Sex'], as_index=False).mean().sort_values(by='Survived', ascending=False)
